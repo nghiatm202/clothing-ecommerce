@@ -7,6 +7,10 @@
   font-family: "Spartan", sans-serif;
 }
 
+:root {
+  --green: #088178;
+}
+
 h1 {
   font-size: 50px;
   line-height: 64px;
@@ -55,6 +59,10 @@ body {
   padding: 20px 80px;
   background-color: #e3e6f3;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
 #navbar {
@@ -79,7 +87,7 @@ body {
 
 #navbar li a:hover,
 #navbar li a.active {
-  color: #088178;
+  color: var(--green);
 }
 
 #navbar li a:hover::after,
@@ -87,8 +95,92 @@ body {
   content: "";
   position: absolute;
   width: 30%;
-  background: #088178;
+  background: var(--green);
   height: 2px;
   bottom: -4px;
   left: 20px;
+}
+
+/* Home Page */
+#hero {
+  background-image: url(./images/hero4.png);
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 25% right 0;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#hero h4 {
+  padding-bottom: 15px;
+}
+
+#hero h1 {
+  color: var(--green);
+}
+
+#hero button {
+  background-image: url(./images/button.png);
+  border: none;
+  color: var(--green);
+  font-weight: 700;
+  font-size: 15px;
+  background-color: transparent;
+  padding: 15px 80px 10px 65px;
+  cursor: pointer;
+}
+
+/* Feature */
+#feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.feature-box {
+  text-align: center;
+  border: 1px solid #cce7d0;
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+  width: 180px;
+  padding: 25px 15px;
+  margin: 15px 0;
+}
+
+.feature-box:hover {
+  box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+
+.feature-box img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.feature-box h6 {
+  display: inline-block;
+  color: var(--green);
+  line-height: 1;
+  background-color: #fddde4;
+  border-radius: 4px;
+  padding: 9px 8px 6px 8px;
+}
+
+.feature-box:nth-child(2) h6 {
+  background-color: #cdebbc;
+}
+.feature-box:nth-child(3) h6 {
+  background-color: #d1e8f2;
+}
+.feature-box:nth-child(4) h6 {
+  background-color: #cdd4f8;
+}
+.feature-box:nth-child(5) h6 {
+  background-color: #f6dbf6;
+}
+.feature-box:nth-child(6) h6 {
+  background-color: #fff2e5;
 }

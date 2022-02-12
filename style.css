@@ -408,3 +408,54 @@ body {
   font-weight: 800;
   font-size: 15px;
 }
+
+#newsletter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-image: url(./images/banner/b14.png);
+  background-repeat: no-repeat;
+  background-color: #041e42;
+  background-position: 20% 30%;
+}
+
+#newsletter h4 {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 700;
+}
+
+#newsletter p {
+  font-size: 14px;
+  color: #818ea0;
+  font-weight: 600;
+}
+
+#newsletter p span {
+  color: #ffbd27;
+}
+
+#newsletter .form {
+  display: flex;
+  width: 40%;
+}
+
+#newsletter input {
+  width: 100%;
+  height: 3.125rem;
+  padding: 0 1.25em;
+  font-size: 14px;
+  border: 1px solid transparent;
+  outline: none;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+#newsletter button {
+  background: var(--green);
+  color: #fff;
+  white-space: nowrap; /* văn bản sẽ hiển thị trên cùng 1 hàng */
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}

@@ -530,6 +530,104 @@ footer .copyright {
   display: none;
 }
 
+/* Shop Page */
+#page-header {
+  background-image: url(./images/banner/b1.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 14px;
+}
+
+#page-header h2,
+#page-header p {
+  color: #fff;
+}
+
+#pagination {
+  text-align: center;
+}
+
+#pagination a {
+  text-decoration: none;
+  background-color: var(--green);
+  padding: 15px 20px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+#pagination a i {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Single Product */
+#product-details {
+  display: flex;
+  margin-top: 20px;
+}
+
+#product-details .single-product-img {
+  width: 40%;
+  margin-right: 50px;
+}
+
+.small-img-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-img-column {
+  flex-basis: 24%; /* giống như set width cho phần tử */
+  cursor: pointer;
+}
+
+#product-details .single-product-details {
+  width: 50%;
+  padding-top: 30px;
+}
+
+#product-details .single-product-details h4 {
+  padding: 40px 0 20px 0;
+}
+
+#product-details .single-product-details h2 {
+  font-size: 26px;
+}
+
+#product-details .single-product-details select {
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+#product-details .single-product-details input {
+  padding-left: 10px;
+  width: 50px;
+  height: 47px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+#product-details .single-product-details select:focus,
+#product-details .single-product-details input:focus {
+  outline: none;
+}
+
+#product-details .single-product-details button {
+  background-color: var(--green);
+  color: #fff;
+}
+
+#product-details .single-product-details span {
+  line-height: 25px;
+}
 /* Media Query */
 @media (max-width: 799px) {
   .section-p1 {
@@ -693,6 +791,21 @@ footer .copyright {
   }
 
   #newsletter .form {
+    width: 100%;
+  }
+
+  /* Single Product */
+  #product-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #product-details .single-product-img {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  #product-details .single-product-details {
     width: 100%;
   }
 }

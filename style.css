@@ -847,6 +847,120 @@ footer .copyright {
   color: #000;
 }
 
+/* Cart Page */
+#cart {
+  overflow-x: auto;
+}
+
+#cart table {
+  width: 100%;
+  border-collapse: collapse; /* Khoảng trống giữa các đường viền của table bị loại bỏ, chỉ còn đường viền duy nhất. */
+  table-layout: fixed;
+  white-space: nowrap;
+}
+
+#cart table img {
+  width: 70px;
+}
+
+#cart table td {
+  text-align: center;
+}
+
+#cart table td:nth-child(1) {
+  width: 100px;
+  text-align: center;
+}
+
+#cart table td:nth-child(3) {
+  width: 250px;
+  text-align: center;
+}
+
+#cart table td:nth-child(2),
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6) {
+  width: 150px;
+  text-align: center;
+}
+
+#cart table td:nth-child(5) input {
+  width: 70px;
+  padding: 10px 5px 10px 15px;
+}
+
+#cart table thead {
+  border: 1px solid #e2e9e1;
+  border-left: none;
+  border-right: none;
+}
+
+#cart table thead td {
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding: 18px 0;
+  line-height: 22px;
+}
+
+#cart table tbody td {
+  font-size: 13px;
+}
+
+#cart table tbody tr td {
+  padding-top: 15px;
+}
+
+#cart-add {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#coupon {
+  width: 50%;
+}
+
+#coupon h3,
+#subtotal h3 {
+  padding-bottom: 15px;
+}
+
+#coupon input {
+  padding: 10px 20px;
+  width: 60%;
+  outline: none;
+  border: 1px solid #e2e9e1;
+  margin-right: 10px;
+}
+
+#coupon button,
+#subtotal button {
+  background-color: var(--green);
+  color: white;
+  padding: 10px 20px;
+}
+
+#subtotal {
+  width: 50%;
+  border: 1px solid #e2e9e1;
+  padding: 30px;
+}
+
+#subtotal table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+#subtotal table td {
+  border: 1px solid #e2e9e1;
+  width: 50%;
+  padding: 10px;
+  font-size: 13px;
+}
+
 /* Media Query */
 @media (max-width: 799px) {
   .section-p1 {
@@ -1109,5 +1223,20 @@ footer .copyright {
 
   #form-details .people div {
     justify-content: space-around;
+  }
+
+  /* Cart Page */
+  #cart-add {
+    flex-direction: column;
+  }
+
+  #coupon {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #subtotal {
+    width: 100%;
+    padding: 20px;
   }
 }
